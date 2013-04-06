@@ -1,0 +1,25 @@
+{
+  "name": "nwitch",
+  "version": "0.0.0",
+  "description": "A TwitchTV bot written in node",
+  "main": "./lib/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KenanY/nwitch.git"
+  },
+  "author": "Kenan Yildirim",
+  "license": "MIT",
+  "dependencies": {
+    "winston": "~0.6.0",
+    "irc": "~0.3.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-coffee": "~0.6.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "docco": "git://github.com/jashkenas/docco.git"
+  }
+}
