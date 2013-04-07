@@ -14,6 +14,7 @@ module.exports = (grunt) ->
         ext: '.js'
     uglify:
       options:
+        report: 'min'
         compress:
           comparisons: false,
           unsafe: true,
