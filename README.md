@@ -10,7 +10,7 @@ You can download nwitch with [git](http://git-scm.com/). Remember that you need
 node installed to build and run the bot.
 
 ``` bash
-$ git clone https://github.com/KenanY/nwitch.git
+$ git clone https://github.com/KenanY/nwitch.git --depth 1
 $ cd nwitch
 $ npm install -g grunt-cli
 $ npm install
