@@ -3,6 +3,8 @@ docco = require 'docco'
 module.exports = (grunt) ->
   grunt.initConfig
     pkg: grunt.file.readJSON('package.json')
+    clean:
+      lib: './lib/'
     coffee:
       src:
         options:
@@ -16,9 +18,9 @@ module.exports = (grunt) ->
       options:
         report: 'min'
         compress:
-          comparisons: false,
-          unsafe: true,
-          unsafe_comps: true,
+          comparisons: false
+          unsafe: true
+          unsafe_comps: true
           warnings: false
         beautify:
           ascii_only: true
@@ -31,12 +33,23 @@ module.exports = (grunt) ->
           dest: './lib/'
           ext: '.js'
         ]
+    watch:
+      src:
+        options:
+          interrupt: true
+        files: [
+          './src/**/*'
+        ]
+        tasks: 'coffee'
 
   grunt.registerTask 'doc', 'Documents.', () ->
     docco.document @options(args: ['./src/*.coffee']), @async()
 
+  grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-uglify'
+  grunt.loadNpmTasks 'grunt-contrib-watch'
 
   grunt.registerTask 'min', ['uglify']
-  grunt.registerTask 'default', ['coffee']
+  grunt.registerTask 'build', ['clean', 'coffee']
+  grunt.registerTask 'default', ['build']
