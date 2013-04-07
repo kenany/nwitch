@@ -13,15 +13,18 @@
   "author": "Kenan Yildirim",
   "license": "MIT",
   "dependencies": {
-    "winston": "~0.6.0",
-    "irc": "~0.3.0"
+    "derby": "~0.3.0",
+    "express": "~3.1.0",
+    "gzippo": "~0.2.0",
+    "irc": "~0.3.0",
+    "winston": "~0.6.0"
   },
   "devDependencies": {
+    "docco": "git://github.com/jashkenas/docco.git",
     "grunt": "~0.4.0",
     "grunt-contrib-clean": "~0.4.0",
     "grunt-contrib-coffee": "~0.6.0",
     "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-watch": "~0.3.0",
-    "docco": "git://github.com/jashkenas/docco.git"
+    "grunt-contrib-watch": "~0.3.0"
   }
 }

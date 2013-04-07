@@ -1,4 +1,5 @@
-lib
-src/config.coffee
 node_modules
 *.log
+lib
+src/config.coffee
+public/gen
