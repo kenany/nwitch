@@ -68,17 +68,26 @@ The following is a compilation of questions I expect to receive.
 Of course! In fact, nwitch was created specifically for Windows, because Windows
 is the standard OS for gaming.
 
-### Is there a hosted version?
-
-No; nwitch was conceived as a self-hosted bot. There is no reason to have a
-hosted version that runs 24/7, because the features it provides are only useful
-while you're streaming.
-
 ### Can it moderate multiple channels?
 
 Unfortunately, each individual nwitch process is designed around managing only
 one channel at a time. To manage multiple channels, you would need to run
 multiple instances of nwitch.
+
+### How do I know nwitch doesn't transmit the bot's account credentials to you?
+
+No, but why should you take my word for it? Simply read through source code.
+
+### Isn't it dangerous to store the account credentials in plaintext?
+
+Yes, and this will hopefully change in the future. If an attacker did get the
+credentials, there isn't a whole lot they could do with it anyways.
+
+### Is there a hosted version?
+
+No; nwitch was conceived as a self-hosted bot. There is no reason to have a
+hosted version that runs 24/7, because the features it provides are only useful
+while you're streaming.
 
 ## Contributing
 
