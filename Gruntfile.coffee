@@ -11,7 +11,7 @@ module.exports = (grunt) ->
           bare: true
         expand: true
         cwd: './src/'
-        src: ['*.coffee']
+        src: ['**/*.coffee']
         dest: './lib/'
         ext: '.js'
     uglify:
@@ -29,7 +29,7 @@ module.exports = (grunt) ->
         files: [
           expand: true
           cwd: './lib/'
-          src: ['*.js']
+          src: ['**/*.js']
           dest: './lib/'
           ext: '.js'
         ]
