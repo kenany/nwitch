@@ -3,6 +3,7 @@
 
 
 # Routes
+# ------
 
 get '/', (page, model, params, next) ->
   return page.redirect '/' if page.params?.query?.play?
@@ -11,6 +12,7 @@ get '/', (page, model, params, next) ->
 
 
 # Controller functions
+# --------------------
 
 ready (model) ->
   # TODO

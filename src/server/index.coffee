@@ -17,13 +17,14 @@ Error.stackTraceLimit = Infinity if process.env.NODE_ENV is 'development'
 
 # Server configuration
 expressApp = express()
-module.exports = server = http.createServer expressApp
-
-# Maximum age of cached assets
-retirement = moment.duration(1, 'year').asMilliseconds()
+server = http.createServer expressApp
+module.exports = server
 
 # The server-side store syncs data over Socket.IO
 store = derby.createStore listen: server
+
+# Maximum age of cached assets
+retirement = moment.duration(1, 'year').asMilliseconds()
 
 root = path.dirname path.dirname __dirname
 publicPath = path.join root, 'public'
@@ -55,5 +56,7 @@ expressApp
 
 
 # Server-only routes
+# ------------------
+
 expressApp.all '*', (req) ->
   throw "404: #{req.url}"
