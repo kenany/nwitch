@@ -13,8 +13,4 @@ get '/', (page, model, params, next) ->
 # Controller functions
 
 ready (model) ->
-
-  # Tell Firefox to use elements for styles instead of CSS
-  # see: https://developer.mozilla.org/en/Rich-Text_Editing_in_Mozilla
-  document.execCommand 'useCSS', false, true
-  document.execCommand 'styleWithCSS', false, false
+  # TODO
