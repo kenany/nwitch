@@ -4,6 +4,7 @@ path = require 'path'
 express = require 'express'
 gzippo = require 'gzippo'
 derby = require 'derby'
+moment = require 'moment'
 
 # Kinda external dependencies
 app = require '../app'
@@ -18,8 +19,8 @@ Error.stackTraceLimit = Infinity if process.env.NODE_ENV is 'development'
 expressApp = express()
 module.exports = server = http.createServer expressApp
 
-# Max age of cached assets
-ONE_YEAR = 1000 * 60 * 60 * 24 * 365
+# Maximum age of cached assets
+retirement = moment.duration(1, 'year').asMilliseconds()
 
 # The server-side store syncs data over Socket.IO
 store = derby.createStore listen: server
@@ -32,7 +33,7 @@ expressApp
   #.use(express.favicon('#{publicPath}/favicon.ico'))
 
   # Gzip static files and serve from memory
-  .use(gzippo.staticGzip publicPath, maxAge: ONE_YEAR)
+  .use(gzippo.staticGzip publicPath, maxAge: retirement)
 
   # Gzip dynamically rendered content
   .use(express.compress())
