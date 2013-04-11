@@ -4,7 +4,7 @@ nwitch is a [TwitchTV](http://www.twitch.tv/) bot written in
 [node](http://nodejs.org/). It is currently early in development, and I actually
 recommend _against_ using it for the time being.
 
-## Installation
+## Download
 
 You can download nwitch with [git](http://git-scm.com/). Remember that you need
 node installed to build and run the bot.
@@ -12,7 +12,7 @@ node installed to build and run the bot.
 ``` bash
 $ git clone https://github.com/KenanY/nwitch.git --depth 1
 $ cd nwitch
-$ npm install -g grunt-cli
+$ npm install grunt-cli -g
 $ npm install
 ```
 
@@ -53,8 +53,11 @@ You must run nwitch every time you start streaming, and leave it running in the
 background throughout your streaming session.
 
 ``` bash
-$ node lib/index.js
+$ node nwitch
 ```
+
+You will then find nwitch's dashboard by going to <http://localhost:3001>. You
+can change the port in `nwitch.js`.
 
 There is no reason to keep nwitch running while you're not streaming. As such,
 you are free to terminate it when you're done streaming.
