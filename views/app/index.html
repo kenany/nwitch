@@ -1,3 +1,5 @@
+<import: src="footer">
+
 <Head:>
   <meta name="viewport" content="width=device-width">
 
@@ -5,5 +7,12 @@
   nwitch
 
 <Body:>
-  <h1>nwitch</h1>
-  <input value="{message}"><h1>{message}</h1>
+  <div class="grid">
+    <div class="col-1-4">
+      <h1>nwitch</h1>
+    </div>
+    <div class="col-3-4">
+      <input value="{message}"><h1>{message}</h1>
+    </div>
+  </div>
+  <app:footer:footer/>
