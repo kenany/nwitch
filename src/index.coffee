@@ -16,4 +16,3 @@ client = new irc.Client serverAddress, bot.username,
 logger.info 'First setting up error listener...'
 client.addListener 'error', (message) ->
   logger.error message
-
