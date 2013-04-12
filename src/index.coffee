@@ -15,9 +15,6 @@ try
 catch e
   logger.error 'Config file not found.'
 
-# Infinite stack trace
-Error.stackTraceLimit = Infinity if process.env.NODE_ENV is 'development'
-
 # Maximum age of cached assets
 retirement = moment.duration(1, 'year').asMilliseconds()
 
