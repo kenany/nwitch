@@ -7,7 +7,8 @@ moment = require 'moment'
 path = require 'path'
 
 # Not-so-external dependencies
-{serverAddress, logger} = require './common'
+{serverAddress} = require './common'
+{logger} = require './core/logger'
 {bot} = require './config'
 
 # Infinite stack trace
