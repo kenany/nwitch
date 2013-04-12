@@ -75,11 +75,11 @@ is the standard OS for gaming.
 
 Unfortunately, each individual nwitch process is designed around managing only
 one channel at a time. To manage multiple channels, you would need to run
-multiple instances of nwitch.
+multiple instances of nwitch on different ports.
 
 ### How do I know nwitch doesn't transmit the bot's account credentials to you?
 
-No, but why should you take my word for it? Simply read through source code.
+If you read the source code you'll see that no information is transmitted to me.
 
 ### Isn't it dangerous to store the account credentials in plaintext?
 
