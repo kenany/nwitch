@@ -9,7 +9,11 @@ path = require 'path'
 server = require './core/server'
 {serverAddress} = require './common'
 {logger} = require './core/logger'
-{bot} = require './config'
+
+try
+  {bot} = require './config'
+catch e
+  logger.error 'Config file not found.'
 
 # Infinite stack trace
 Error.stackTraceLimit = Infinity if process.env.NODE_ENV is 'development'
