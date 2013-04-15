@@ -7,22 +7,19 @@ path = require 'path'
 
 # Not-so-external dependencies
 server = require './core/server'
-{serverAddress} = require './common'
 {logger} = require './core/logger'
-
-try
-  {bot} = require './config'
-catch e
-  logger.error 'Config file not found.'
+{Config} = require './core/config'
 
 # Maximum age of cached assets
 retirement = moment.duration(1, 'year').asMilliseconds()
 
-root = path.dirname path.dirname __dirname
+# File paths
+root = path.dirname __dirname
 publicPath = path.join root, 'public'
 viewsPath = path.join root, 'views'
 
-# Setup express app
+# Setup express app. CoffeeScript is a little buggy when it comes to multiline
+# chaining, so parentheses are necessary.
 exports.app = app = express()
 app
   .set('view engine', 'jade')
@@ -56,6 +53,7 @@ connectToIRC = () ->
   client.addListener 'error', (message) ->
     logger.error message
 
+# Main function
 main = () ->
   server.run app
 

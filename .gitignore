@@ -3,4 +3,4 @@ node_modules
 components
 lib
 public/gen
-src/config.coffee
+config.toml

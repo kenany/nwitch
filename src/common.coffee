@@ -1,1 +1,0 @@
-exports.serverAddress = '199.9.253.199'

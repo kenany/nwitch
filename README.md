@@ -25,19 +25,7 @@ Being a self-hosted bot, nwitch requires a bit more effort than other bots.
 Create a new TwitchTV account for your bot. Preferably, the username should make
 it clear to your viewers that the account is a bot.
 
-Then, create the file `src/config.coffee` and paste the below snippet. Update
-the values with the bot's account credentials. The channel name should be the
-username of your streaming account.
-
-``` coffeescript
-exports.bot =
-  username: 'Gmanbot'
-  password: 'password123'
-  channel: ["#guardsmanbob"]
-```
-
-This file does not come with nwitch by default in order to prevent accidental
-committing of credentials to the git repository.
+Then, rename `sample.config.toml` to `config.toml` and edit the settings.
 
 ### Building
 

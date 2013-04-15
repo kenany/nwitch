@@ -1,0 +1,10 @@
+[account]
+username = "adminbot"
+password = "password123"
+channel = "#riotgames"
+
+[irc]
+address = '199.9.253.199'
+
+[server]
+port = 3001

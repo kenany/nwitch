@@ -50,6 +50,6 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-uglify'
   grunt.loadNpmTasks 'grunt-contrib-watch'
 
-  grunt.registerTask 'min', ['uglify']
   grunt.registerTask 'build', ['clean', 'coffee']
+  grunt.registerTask 'min', ['build', 'uglify']
   grunt.registerTask 'default', ['build']
