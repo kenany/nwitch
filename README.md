@@ -25,7 +25,9 @@ Being a self-hosted bot, nwitch requires a bit more effort than other bots.
 Create a new TwitchTV account for your bot. Preferably, the username should make
 it clear to your viewers that the account is a bot.
 
-Then, rename `sample.config.toml` to `config.toml` and edit the settings.
+Then, rename `sample.config.toml` to `config.toml`. This configuration file is a
+[TOML](https://github.com/mojombo/toml) file, so editing and reading it should
+be easy thanks to obvious semantics.
 
 ### Building
 
