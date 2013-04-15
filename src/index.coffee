@@ -1,11 +1,10 @@
-# External dependencies
 express = require 'express'
 gzippo = require 'gzippo'
 irc = require 'irc'
 moment = require 'moment'
 path = require 'path'
 
-# Not-so-external dependencies
+
 server = require './core/server'
 {logger} = require './core/logger'
 {Config} = require './core/config'

@@ -16,7 +16,12 @@ class Config
     for option, defaultValue of @constructor.defaults
       this[option] ?= defaultValue
 
-# Read config from *path* as JSON and *callback* with a Config instance.
+# Create a Config instance from a TOML file.
+#
+# path  - The String path to a TOML file.
+# callback - The Function called after creating the Config instance.
+#
+# Returns a Config instance.
 Config.fromFile = (path, callback) ->
   async.waterfall [
     (callback) ->

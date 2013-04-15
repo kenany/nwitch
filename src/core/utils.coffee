@@ -5,10 +5,12 @@ topl = require 'topl'
 
 fileExists = fs.exists or path.exists
 
-# Read and try to parse a TOML file.
+# Read and parse a TOML file.
 #
-# {String} filename The path to a TOML file.
-# {Function} callback The function called after parsing.
+# filename  - The String path to a TOML file.
+# callback - The Function called after parsing.
+#
+# Returns the parsed-TOML Object.
 readTOML = (filename, callback) ->
   async.waterfall [
     (callback) ->
@@ -23,5 +25,4 @@ readTOML = (filename, callback) ->
         callback error
   ], callback
 
-# Exports
 module.exports = {fileExists, readTOML}

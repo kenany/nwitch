@@ -1,4 +1,3 @@
-# winston for logging
 winston = require 'winston'
 
 transports = exports.transports = [
