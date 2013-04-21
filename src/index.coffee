@@ -58,7 +58,7 @@ createApp = (callback) ->
         .use(app.router)
 
       app.get '/', (req, res) ->
-        res.send 'Hello World'
+        res.render 'index.jade'
 
       callback null, app
   ], callback
