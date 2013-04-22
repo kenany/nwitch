@@ -6,37 +6,38 @@ irc = require 'irc'
 moment = require 'moment'
 
 {logger} = require './core/logger'
-{Config} = require './core/config'
-{readTOML, fileExists} = require './core/utils'
 
-# Maximum age of cached assets
-retirement = moment.duration(1, 'year').asMilliseconds()
+# Root path
+root = path.dirname __dirname
 
-publicPath = path.join root, 'public'
-viewsPath = path.join root, 'views'
 
 # Connect to the IRC server
-connectToIRC = () ->
-  logger.info 'Connecting to IRC...'
-  client = new irc.Client serverAddress, bot.username,
-    userName: bot.username
-    password: bot.password
-    channels: bot.channel
-  client.addListener 'error', (message) ->
-    logger.error message
-
-createApp = (callback) ->
-  root = path.dirname __dirname
-
+connectToIRC = (config, callback) ->
   async.waterfall [
     (callback) ->
-      configPath = path.join root, 'config.toml'
-      fileExists configPath, (exists) ->
-        if exists
-          Config.fromFile configPath, callback
-        else
-          callback null, new Config
-    (config, callback) ->
+      bot = config.account
+      client = new irc.Client config.irc.address, bot.username,
+        userName: bot.username
+        password: bot.password
+        channels: [bot.channel]
+      client.addListener 'error', (error) ->
+        callback? error
+        callback = null
+      logger.info "Connected to IRC server #{ config.irc.address } and joined
+        channel #{ bot.channel } as #{ bot.username }."
+      callback? null, config, client
+      callback = null
+  ], callback
+
+createApp = (config, client, callback) ->
+  async.waterfall [
+    (callback) ->
+      publicPath = path.join root, 'public'
+      viewsPath = path.join root, 'views'
+
+      # Maximum age of cached assets
+      retirement = moment.duration(1, 'year').asMilliseconds()
+
       # Setup express app. CoffeeScript is a little buggy when it comes to
       # multiline chaining, so parentheses are necessary.
       app = express()
@@ -60,18 +61,39 @@ createApp = (callback) ->
       app.get '/', (req, res) ->
         res.render 'index.jade'
 
-      callback null, app
+      callback? null, config, client, app
+      callback = null
   ], callback
 
 
 # Main function
 main = () ->
   async.waterfall [
+
+    # First generate a Config object
     (callback) ->
-      createApp callback
-    (app, callback) ->
+      {Config} = require './core/config'
+      {fileExists} = require './core/utils'
+      configPath = path.join root, 'config.toml'
+      fileExists configPath, (exists) ->
+        if exists
+          logger.info "Config file successfully found."
+          configObject = Config.fromFile configPath, callback
+        else
+          logger.error "Config file cannot be found."
+
+    # Connect to the IRC server
+    (config, callback) ->
+      connectToIRC config, callback
+
+    # Then create the express app
+    (config, client, callback) ->
+      createApp config, client, callback
+
+    # Now for the web server
+    (config, client, app, callback) ->
       server = require './core/server'
-      server.run app, callback
+      server.run config, client, app, callback
   ], (error) ->
     if error
       logger.error error.message, error
