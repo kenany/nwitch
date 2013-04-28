@@ -1,4 +1,3 @@
-fs = require 'fs'
 async = require 'async'
 
 {readTOML, fileExists} = require './utils'
