@@ -21,13 +21,13 @@
     "jade": "~0.29.0",
     "moment": "~2.0.0",
     "topl": "~0.2.0",
-    "winston": "~0.6.0"
+    "winston": "~0.7.0"
   },
   "devDependencies": {
     "docco": "git://github.com/jashkenas/docco.git",
     "grunt": "~0.4.0",
     "grunt-contrib-clean": "~0.4.0",
-    "grunt-contrib-coffee": "~0.6.0",
+    "grunt-contrib-coffee": "~0.7.0",
     "grunt-contrib-uglify": "~0.2.0",
     "grunt-contrib-watch": "~0.3.0"
   },
