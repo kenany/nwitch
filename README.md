@@ -1,5 +1,7 @@
 # nwitch
 
+[![Dependency Status](https://gemnasium.com/KenanY/nwitch.png)](https://gemnasium.com/KenanY/nwitch)
+
 nwitch is a [TwitchTV](http://www.twitch.tv/) bot written in
 [node](http://nodejs.org/). It is currently early in development, and I actually
 recommend _against_ using it for the time being.
