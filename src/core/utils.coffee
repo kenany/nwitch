@@ -1,7 +1,12 @@
-fs = require 'fs'
 path = require 'path'
 async = require 'async'
 topl = require 'topl'
+
+fs = undefined
+try
+  fs = require 'graceful-fs'
+catch error
+  fs = require 'fs'
 
 fileExists = fs.exists or path.exists
 
