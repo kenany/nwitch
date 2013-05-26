@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "async": "~0.2.0",
-    "express": "~3.1.0",
+    "express": "~3.2.0",
     "express-uncapitalize": "~1.0.0",
     "gzippo": "~0.2.0",
     "irc": "~0.3.0",
