@@ -10,24 +10,24 @@
   "author": "Kenan Yildirim",
   "license": "MIT",
   "dependencies": {
-    "async": "~0.2.0",
-    "express": "~3.1.0",
-    "express-uncapitalize": "~1.0.0",
-    "gzippo": "~0.2.0",
-    "irc": "~0.3.0",
-    "jade": "~0.29.0",
-    "moment": "~2.0.0",
-    "topl": "~0.2.0",
-    "winston": "~0.7.0"
+    "async": "0.2.0",
+    "express": "3.1.0",
+    "express-uncapitalize": "1.0.0",
+    "gzippo": "0.2.0",
+    "irc": "0.3.0",
+    "jade": "0.29.0",
+    "moment": "2.0.0",
+    "topl": "0.2.0",
+    "winston": "0.7.0"
   },
   "devDependencies": {
-    "grunt": "~0.4.0",
-    "grunt-contrib-clean": "~0.4.0",
-    "grunt-contrib-coffee": "~0.7.0",
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-watch": "~0.3.0"
+    "grunt": "0.4.0",
+    "grunt-contrib-clean": "0.4.0",
+    "grunt-contrib-coffee": "0.7.0",
+    "grunt-contrib-uglify": "0.2.0",
+    "grunt-contrib-watch": "0.3.0"
   },
   "optionalDependencies": {
-    "graceful-fs": "~1.2.0"
+    "graceful-fs": "1.2.0"
   }
 }
