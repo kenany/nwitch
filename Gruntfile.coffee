@@ -1,5 +1,3 @@
-docco = require 'docco'
-
 module.exports = (grunt) ->
   grunt.initConfig
     pkg: grunt.file.readJSON('package.json')
@@ -41,9 +39,6 @@ module.exports = (grunt) ->
           './src/**/*'
         ]
         tasks: 'coffee'
-
-  grunt.registerTask 'doc', 'Documents.', () ->
-    docco.document @options(args: ['./src/*.coffee']), @async()
 
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
