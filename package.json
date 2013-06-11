@@ -10,7 +10,7 @@
   "author": "Kenan Yildirim",
   "license": "MIT",
   "dependencies": {
-    "async": "0.2.0",
+    "async": "0.2.9",
     "express": "3.1.0",
     "express-uncapitalize": "1.0.0",
     "gzippo": "0.2.0",
