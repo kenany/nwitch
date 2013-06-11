@@ -14,7 +14,7 @@
     "express": "3.2.6",
     "express-uncapitalize": "1.0.0",
     "gzippo": "0.2.0",
-    "irc": "0.3.0",
+    "irc": "0.3.6",
     "jade": "0.29.0",
     "moment": "2.0.0",
     "topl": "0.2.0",
