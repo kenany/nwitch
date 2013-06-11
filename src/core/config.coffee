@@ -11,7 +11,7 @@ class Config
     irc:
       address: '199.9.253.199'
     server:
-      port: 3001
+      port: 6667
 
   constructor: (options) ->
     for option, value of options
