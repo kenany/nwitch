@@ -15,7 +15,6 @@ node installed to build and run the bot.
 $ git clone https://github.com/KenanY/nwitch.git --depth 1
 $ cd nwitch
 $ npm install grunt-cli -g
-$ npm install
 ```
 
 ## Usage
