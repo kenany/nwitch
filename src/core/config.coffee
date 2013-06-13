@@ -27,16 +27,16 @@ class Config
 # Returns a Config instance.
 Config.fromFile = (path, callback) ->
   async.waterfall [
-    (callback) ->
+    (cb) ->
       fileExists path, (exists) ->
         if exists
-          readTOML path, callback
+          readTOML path, cb
         else
-          callback? new Error "Config file at '#{ path }' does not exist."
-    (options, callback) ->
+          cb? new Error "Config file at '#{ path }' does not exist."
+    (options, cb) ->
       config = new Config options
       config.__filename = path
-      callback? null, config
+      cb? null, config
   ], callback
 
 module.exports = {Config}

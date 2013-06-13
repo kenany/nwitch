@@ -18,16 +18,16 @@ fileExists = fs.exists or path.exists
 # Returns the parsed-TOML Object.
 readTOML = (filename, callback) ->
   async.waterfall [
-    (callback) ->
-      fs.readFile filename, callback
-    (buffer, callback) ->
+    (cb) ->
+      fs.readFile filename, cb
+    (buffer, cb) ->
       try
         rv = topl.parse buffer.toString()
-        callback null, rv
+        cb null, rv
       catch error
         error.filename = filename
         error.message = "parsing #{ path.basename(filename) }: #{ error.message }"
-        callback error
+        cb error, null
   ], callback
 
 module.exports = {fileExists, readTOML}
