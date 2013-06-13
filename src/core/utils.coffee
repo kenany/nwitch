@@ -12,7 +12,7 @@ fileExists = fs.exists or path.exists
 
 # Read and parse a TOML file.
 #
-# filename  - The String path to a TOML file.
+# filename - The String path to a TOML file.
 # callback - The Function called after parsing.
 #
 # Returns the parsed-TOML Object.
