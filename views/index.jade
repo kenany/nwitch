@@ -1,12 +1,16 @@
 extends layout
 
 block content
-  h1 nwitch
+  .grid.grid-pad
+    .col-1-2
+      h1 nwitch
 
-  iframe(
-    width='300',
-    height='400',
-    frameborder='0',
-    scrolling='no',
-    id='chat_embed',
-    src=embed)
+    .col-1-2
+      iframe(
+        height='500',
+        frameborder='0',
+        scrolling='no',
+        id='chat_embed',
+        src=embed)
+
+  script(src='gen/build.js')
