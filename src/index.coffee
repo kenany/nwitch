@@ -60,7 +60,8 @@ createApp = (config, callback) ->
     .use(app.router)
 
   app.get '/', (req, res) ->
-    res.render 'index.jade'
+    res.render 'index.jade',
+      embed: "http://www.twitch.tv/chat/embed?channel=#{config.account.channel}&popout_chat=true"
 
   callback? null, app
 
