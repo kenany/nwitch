@@ -1,6 +1,4 @@
-node_modules
 *.log
-components
 lib
 public/gen
 config.toml
