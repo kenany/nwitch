@@ -15,14 +15,14 @@ module.exports = (grunt) ->
     uglify:
       options:
         report: 'min'
+        beautify:
+          ascii_only: true
+          max_line_len: 500
         compress:
           comparisons: false
           unsafe: true
           unsafe_comps: true
           warnings: false
-        beautify:
-          ascii_only: true
-          max_line_len: 500
       lib:
         files: [
           expand: true
