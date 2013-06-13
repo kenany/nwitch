@@ -18,7 +18,7 @@ connectToIRC = (config, callback) ->
   client = new irc.Client config.irc.address, bot.username,
     userName: bot.username
     realName: bot.username
-    port: config.server.port or 6667
+    port: 6667
     password: bot.password
     showErrors: true
     channels: [bot.channel]

@@ -7,4 +7,4 @@ channel = "riotgames"
 address = "199.9.253.199"
 
 [server]
-port = 6667
+port = 3001
