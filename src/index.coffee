@@ -91,7 +91,7 @@ main = () ->
     # Then create the express app
     (config, client, callback) ->
       createApp config, (error, app) ->
-        callback? error?, config, client, app
+        callback? error, config, client, app
 
     # Now for the web server
     (config, client, app, callback) ->
