@@ -91,12 +91,12 @@ main = () ->
     # Then create the express app
     (config, client, callback) ->
       createApp config, (error, app) ->
-        callback? error, config, client, app
+        callback? error, config, app
 
     # Now for the web server
-    (config, client, app, callback) ->
+    (config, app, callback) ->
       server = require './core/server'
-      server.run config, client, app, callback
+      server.run config, app, callback
   ], (error) ->
     if error
       logger.error error.message, error
