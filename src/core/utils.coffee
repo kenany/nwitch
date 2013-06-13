@@ -19,14 +19,22 @@ fileExists = fs.exists or path.exists
 readTOML = (filename, callback) ->
   async.waterfall [
     (cb) ->
-      fs.readFile filename, cb
+      buffer = ''
+      stream = fs.createReadStream filename,
+        encoding: 'utf8'
+
+      stream.on 'data', (data) ->
+        buffer += data.toString()
+
+      stream.on 'end', ->
+        cb null, buffer
     (buffer, cb) ->
       try
-        rv = topl.parse buffer.toString()
+        rv = topl.parse buffer
         cb null, rv
       catch error
         error.filename = filename
-        error.message = "parsing #{ path.basename(filename) }: #{ error.message }"
+        error.message = "Parsing #{ path.basename(filename) }: #{ error.message }"
         cb error, null
   ], callback
 
