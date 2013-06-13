@@ -1,7 +1,8 @@
 winston = require 'winston'
 
 transports = exports.transports = [
-  new (winston.transports.Console)()
+  new (winston.transports.Console)
+    colorize: true
 ]
 
 exports.logger = new winston.Logger
