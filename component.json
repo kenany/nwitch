@@ -2,6 +2,5 @@
   "dependencies": {
     "necolas/normalize.css": "2.1.2",
     "component/simple-grid": "0.0.1"
-  },
-  "paths": ["public"]
+  }
 }
