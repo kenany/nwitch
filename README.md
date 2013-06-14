@@ -85,7 +85,7 @@ while you're streaming.
 
 ## Contributing
 
-See `CONTRIBUTING.md` for guidelines on contributions
+See `CONTRIBUTING.md` for guidelines on contributions.
 
 ## License
 
