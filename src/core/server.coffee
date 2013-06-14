@@ -8,7 +8,7 @@ run = (config, app, callback) ->
   server.on 'error', (error) ->
     callback? error, null
   server.on 'listening', ->
-    logger.info "Server is up at #{port}"
+    logger.info "Server is up at port #{port}."
     callback? null, server
   server.listen port
 
