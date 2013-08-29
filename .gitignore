@@ -1,3 +1,10 @@
+node_modules/.bin/*
+node_modules/component-builder
+node_modules/grunt
+node_modules/grunt-contrib-clean
+node_modules/grunt-contrib-coffee
+node_modules/grunt-contrib-uglify
+node_modules/grunt-contrib-watch
 *.log
 lib
 public/build.js
