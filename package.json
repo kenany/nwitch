@@ -21,6 +21,18 @@
     "topl": "0.2.0",
     "winston": "0.7.2"
   },
+  "bundleDependencies": [
+    "async",
+    "express",
+    "express-uncapitalize",
+    "gzippo",
+    "irc",
+    "jade",
+    "moment",
+    "stringify-object",
+    "topl",
+    "winston"
+  ],
   "devDependencies": {
     "component-builder": "0.8.3",
     "grunt": "0.4.1",
