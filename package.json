@@ -34,7 +34,7 @@
     "winston"
   ],
   "devDependencies": {
-    "component-builder": "0.8.3",
+    "component-builder": "0.9.0",
     "grunt": "0.4.1",
     "grunt-contrib-clean": "0.4.1",
     "grunt-contrib-coffee": "0.7.0",
