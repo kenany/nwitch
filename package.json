@@ -4,7 +4,11 @@
   "description": "A TwitchTV bot written in node",
   "main": "./lib/",
   "repository": "https://github.com/KenanY/nwitch.git",
-  "author": "Kenan Yildirim",
+  "author": {
+    "name": "Kenan Yildirim",
+    "email": "kenan@kenany.me",
+    "web": "http://kenany.me/"
+  },
   "license": "MIT",
   "dependencies": {
     "async": "0.2.9",
