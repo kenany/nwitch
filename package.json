@@ -1,7 +1,7 @@
 {
   "name": "nwitch",
   "version": "0.0.0",
-  "description": "A TwitchTV bot written in node",
+  "description": "A TwitchTV bot written in Node.js",
   "homepage": "https://github.com/KenanY/nwitch",
   "bugs": {
     "url": "https://github.com/KenanY/nwitch/issues"

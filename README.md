@@ -47,8 +47,8 @@ background throughout your streaming session.
 $ node nwitch
 ```
 
-You will then find nwitch's dashboard by going to <http://localhost:3001>. You
-can change the port in `nwitch.js`.
+You will then find nwitch's dashboard by going to <http://localhost:3001>
+(unless you changed `server.port` in `config.toml`).
 
 There is no reason to keep nwitch running while you're not streaming. As such,
 you are free to terminate it when you're done streaming.
