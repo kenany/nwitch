@@ -2,14 +2,13 @@
 
 [![Dependency Status](https://gemnasium.com/KenanY/nwitch.png)](https://gemnasium.com/KenanY/nwitch)
 
-nwitch is a [TwitchTV](http://www.twitch.tv/) bot written in
-[node](http://nodejs.org/). It is currently early in development, and I actually
-recommend _against_ using it for the time being.
+nwitch is a [TwitchTV](http://www.twitch.tv/) bot written in JavaScript and
+designed to work in [Node.js](http://nodejs.org/).
 
 ## Download
 
 You can download nwitch with [git](http://git-scm.com/). Remember that you need
-node installed to build and run the bot.
+Node.js installed to build and run the bot.
 
 ``` bash
 $ git clone https://github.com/KenanY/nwitch.git --depth 1
@@ -19,7 +18,8 @@ $ npm install grunt-cli -g
 
 ## Usage
 
-Being a self-hosted bot, nwitch requires a bit more effort than other bots.
+Being a self-hosted bot, nwitch requires a bit more effort to set up than other
+bots.
 
 ### Configuration
 
