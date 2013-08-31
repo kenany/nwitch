@@ -2,13 +2,17 @@
   "name": "nwitch",
   "version": "0.0.0",
   "description": "A TwitchTV bot written in node",
-  "main": "./lib/",
-  "repository": "https://github.com/KenanY/nwitch.git",
+  "homepage": "https://github.com/KenanY/nwitch",
+  "bugs": {
+    "url": "https://github.com/KenanY/nwitch/issues"
+  },
   "author": {
     "name": "Kenan Yildirim",
     "email": "kenan@kenany.me",
     "web": "http://kenany.me/"
   },
+  "main": "./lib/",
+  "repository": "https://github.com/KenanY/nwitch.git",
   "license": "MIT",
   "dependencies": {
     "async": "0.2.9",
