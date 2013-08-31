@@ -18,6 +18,7 @@
     "async": "0.2.9",
     "express": "3.3.7",
     "express-uncapitalize": "1.0.0",
+    "graceful-fs": "1.2.2",
     "gzippo": "0.2.0",
     "irc": "0.3.6",
     "jade": "0.35.0",
@@ -30,6 +31,7 @@
     "async",
     "express",
     "express-uncapitalize",
+    "graceful-fs",
     "gzippo",
     "irc",
     "jade",
@@ -40,13 +42,6 @@
   ],
   "devDependencies": {
     "component-builder": "~0.9.0",
-    "grunt": "~0.4.1",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-coffee": "~0.7.0",
-    "grunt-contrib-uglify": "~0.2.2",
-    "grunt-contrib-watch": "~0.5.3"
-  },
-  "optionalDependencies": {
-    "graceful-fs": "1.2.2"
+    "grunt": "~0.4.1"
   }
 }
