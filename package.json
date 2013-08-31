@@ -3,10 +3,7 @@
   "version": "0.0.0",
   "description": "A TwitchTV bot written in node",
   "main": "./lib/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/KenanY/nwitch.git"
-  },
+  "repository": "https://github.com/KenanY/nwitch.git",
   "author": "Kenan Yildirim",
   "license": "MIT",
   "dependencies": {
