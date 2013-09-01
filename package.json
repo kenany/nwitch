@@ -16,6 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "async": "0.2.9",
+    "concat-stream": "1.0.1",
     "express": "3.3.7",
     "express-uncapitalize": "1.0.0",
     "graceful-fs": "1.2.2",
@@ -30,12 +31,14 @@
   },
   "bundleDependencies": [
     "async",
+    "concat-stream",
     "express",
     "express-uncapitalize",
     "graceful-fs",
     "gzippo",
     "irc",
     "jade",
+    "lodash",
     "moment",
     "stringify-object",
     "topl",
