@@ -17,7 +17,7 @@
   "dependencies": {
     "async": "0.2.9",
     "concat-stream": "1.0.1",
-    "express": "3.3.7",
+    "express": "3.3.8",
     "express-uncapitalize": "1.0.0",
     "graceful-fs": "2.0.0",
     "gzippo": "0.2.0",
