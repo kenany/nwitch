@@ -46,6 +46,6 @@
   ],
   "devDependencies": {
     "component-builder": "~0.9.0",
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.0"
   }
 }
