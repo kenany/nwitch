@@ -5,6 +5,7 @@ channel = "riotgames"
 
 [irc]
 address = "199.9.253.199"
+port = 6667
 
 [server]
 port = 3001
