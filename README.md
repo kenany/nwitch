@@ -75,7 +75,8 @@ If you read the source code you'll see that no information is transmitted to me.
 ### Isn't it dangerous to store the account credentials in plaintext?
 
 Yes, and this will hopefully change in the future. If an attacker did get the
-credentials, there isn't a whole lot they could do with it anyways.
+credentials, the worst they could do is timeout your viewers (which you can
+revert).
 
 ### Is there a hosted version?
 
