@@ -41,7 +41,7 @@
     "lodash",
     "moment",
     "stringify-object",
-    "topl",
+    "toml",
     "winston"
   ],
   "devDependencies": {
