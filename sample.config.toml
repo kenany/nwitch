@@ -4,7 +4,7 @@ password = "password123"
 channel = "riotgames"
 
 [irc]
-address = "199.9.253.199"
+address = "199.9.250.239"
 port = 6667
 
 [server]

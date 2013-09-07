@@ -5,6 +5,11 @@ block content
     .col-1-2
       h1 nwitch
 
+      if !user
+        a(href='/auth/twitchtv') Login
+      else
+        p Hi #{user.username}
+
     .col-1-2
       iframe(
         width='500',
