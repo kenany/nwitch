@@ -33,6 +33,6 @@ information. Please try to be as detailed as possible in your report.
 ## Feature requests
 
 Feature requests are extremely welcome. However, first consider if your idea is
-within the scope and aims of this project. In the end, it's up to **you** to make
-a strong case to convince me of the merits of this feature. Please provide as
-much detail and context as possible.
+within the scope and aims of this project. In the end, it's up to **you** to
+make a strong case to convince me of the merits of this feature. Please provide
+as much detail and context as possible.
