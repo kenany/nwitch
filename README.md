@@ -5,6 +5,18 @@
 nwitch is a [TwitchTV](http://www.twitch.tv/) bot written in JavaScript and
 designed to work in [Node.js](http://nodejs.org/).
 
+  - **Full control.** You control your bot. Any of the current services that
+  host bots could disappear tomorrow. What would you do then? nwitch will be
+  around as long as you are, since it doesn't have to pay bills by begging for
+  donations or placing advertisements in its interface.
+  - **Modular.** Only download and execute what you need for your channel. This
+  means faster startup times and no cluttered interfaces, which gives you more
+  time for streaming.
+  - **Diabetic-friendly.** No syntax sugar from CoffeeScript or the like to
+  get in the way of the underlying JavaScript. This allows nearly anyone to
+  write plugins for nwitch. nwitch's open plugin ecosystem makes it the most
+  powerful chat moderation bot around.
+
 ## Download
 
 You can download nwitch with [git](http://git-scm.com/). Remember that you need
