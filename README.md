@@ -14,8 +14,12 @@ designed to work in [Node.js](http://nodejs.org/).
   to run as efficiently as possible, which means faster spam detection and
   quicker disciplinary actions.
   - **Modular.** Only download and execute what you need for your channel. This
-  means faster startup times and no cluttered interfaces, which gives you more
-  time for streaming.
+  results in faster startup times and no cluttered interfaces, which gives you
+  more time for streaming.
+  - **Open-source.** Why give a closed-source bot moderation priveledges? You
+  don't know when the author could go rogue! nwitch's complete source code can
+  be viewed and audited, which makes it more trustworthy than any other bot out
+  there (if you read the source, of course).
   - **Diabetic-friendly.** No syntax sugar from CoffeeScript or the like to
   get in the way of the underlying JavaScript. This allows nearly anyone to
   write plugins for nwitch. nwitch's open plugin ecosystem makes it the most
