@@ -16,7 +16,7 @@ designed to work in [Node.js](http://nodejs.org/).
   - **Modular.** Only download and execute what you need for your channel. This
   results in faster startup times and no cluttered interfaces, which gives you
   more time for streaming.
-  - **Open-source.** Why give a closed-source bot moderation priveledges? You
+  - **Open-source.** Why give a closed-source bot moderation privileges? You
   don't know when the author could go rogue! nwitch's complete source code can
   be viewed and audited, which makes it more trustworthy than any other bot out
   there (if you read the source, of course).
