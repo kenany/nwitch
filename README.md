@@ -9,6 +9,10 @@ designed to work in [Node.js](http://nodejs.org/).
   host bots could disappear tomorrow. What would you do then? nwitch will be
   around as long as you are, since it doesn't have to pay bills by begging for
   donations or placing advertisements in its interface.
+  - **As fast as that new graphics card of yours.** nwitch doesn't have to split
+  its resources across hundreds of channels like other bots. This allows nwitch
+  to run as efficiently as possible, which means faster spam detection and
+  quicker disciplinary actions.
   - **Modular.** Only download and execute what you need for your channel. This
   means faster startup times and no cluttered interfaces, which gives you more
   time for streaming.
