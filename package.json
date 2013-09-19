@@ -28,7 +28,7 @@
     "ms": "0.6.1",
     "passport": "0.1.17",
     "passport-twitchtv": "0.1.1",
-    "stringify-object": "0.1.6",
+    "stringify-object": "0.1.7",
     "toml": "1.0.4",
     "winston": "0.7.2"
   },
