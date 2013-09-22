@@ -50,6 +50,12 @@ Then, rename `sample.config.toml` to `config.toml`. This configuration file is a
 [TOML](https://github.com/mojombo/toml) file, so editing and reading it should
 be easy thanks to obvious semantics.
 
+As of Septemner 17, 2013, TwitchTV now requires an OAuth token in order to log
+into the IRC of a channel. Since nwitch does use IRC for chat moderation, you
+will need to generate this OAuth token. Use
+[this tool](http://twitchapps.com/tmi/) to generate a token. The entire
+token (including `oauth:`) should be your `account.password` in `config.toml`.
+
 ### Building
 
 Once that's done, it's time to build the bot.
