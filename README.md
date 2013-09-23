@@ -25,6 +25,9 @@ designed to work in [Node.js](http://nodejs.org/).
   write plugins for nwitch. nwitch's open plugin ecosystem makes it the most
   powerful chat moderation bot around.
 
+Currently, nwitch is in early development. There are no guarantees that anything
+is working at any particular point in time.
+
 ## Download
 
 You can download nwitch with [git](http://git-scm.com/). Remember that you need
