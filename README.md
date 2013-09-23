@@ -36,7 +36,6 @@ Node.js installed to build and run the bot.
 ``` bash
 $ git clone https://github.com/KenanY/nwitch.git --depth 1
 $ cd nwitch
-$ npm install grunt-cli -g
 ```
 
 ## Usage
@@ -58,14 +57,6 @@ into the IRC of a channel. Since nwitch does use IRC for chat moderation, you
 will need to generate this OAuth token. Use
 [this tool](http://twitchapps.com/tmi/) to generate a token. The entire
 token (including `oauth:`) should be your `account.password` in `config.toml`.
-
-### Building
-
-Once that's done, it's time to build the bot.
-
-``` bash
-$ grunt
-```
 
 ### Initializing
 
