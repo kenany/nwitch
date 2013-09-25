@@ -23,7 +23,7 @@
     "gzippo": "0.2.0",
     "irc": "0.3.6",
     "jade": "0.35.0",
-    "lodash.defaults": "2.0.0",
+    "lodash.defaults": "2.1.0",
     "lodash.forown": "2.0.0",
     "lodash.isfunction": "2.0.0",
     "lodash.isundefined": "2.0.0",
