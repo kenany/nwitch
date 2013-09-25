@@ -1,6 +1,6 @@
 [account]
-username = "adminbot"
-password = "password123"
+username = "nwitch"
+password = "oauth:"
 channel = "riotgames"
 
 [irc]
