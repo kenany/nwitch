@@ -1,1 +1,107 @@
-/* styles */
+#content {
+  background: #BFC7D8;
+}
+
+.snap-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: 2;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.snap-drawers {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  background: #323949;
+}
+
+.snap-drawer {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: auto;
+  width: 265px;
+  height: auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: width 0.3s ease;
+     -moz-transition: width 0.3s ease;
+      -ms-transition: width 0.3s ease;
+       -o-transition: width 0.3s ease;
+          transition: width 0.3s ease;
+  background: #323949;
+  color: #eee;
+}
+.snap-drawer h3 {
+  font-size: 36px;
+  font-weight: normal;
+  margin: 15px;
+}
+.snap-drawer h4 {
+  padding: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 0;
+}
+.snap-drawer ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.snap-drawer li > a {
+  display: block;
+  border-bottom: 1px solid rgba(0,0,0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #000;
+  text-decoration: none;
+  color: #ccc;
+  text-indent: 20px;
+}
+.snap-drawer p {
+  opacity: 0.5;
+  padding: 15px;
+  font-size: 12px;
+}
+
+.snap-drawer-left {
+  left: 0;
+  z-index: 1;
+}
+
+.snap-drawer-right {
+  right: 0;
+  z-index: 1;
+}
+
+.snapjs-left .snap-drawer-right,
+.snapjs-right .snap-drawer-left {
+  display: none;
+}
+
+.snapjs-expand-left .snap-drawer-left,
+.snapjs-expand-right .snap-drawer-right {
+  width: 100%;
+}
+
+.snapjs-expand-left .drawer-inner,
+.snapjs-expand-right .drawer-inner {
+  opacity: 0;
+}

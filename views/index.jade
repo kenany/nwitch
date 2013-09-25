@@ -1,17 +1,26 @@
 extends layout
 
 block content
-  .grid.grid-pad
-    .col-1-2
-      h1 nwitch
+  .snap-drawers
+    .snap-drawer.snap-drawer-left
+      div
+        h3 nwitch
 
-      //
-        if !user
-          a(href='/auth/twitchtv') Login
-        else
-          p Hi #{user.username}
+        h4 Plugins
+        ul
+          li
+            a Plugin1
+          li
+            a Plugin2
+          li
+            a Plugin3
 
-    .col-1-2
+        div
+          p &copy; 2013 Kenan Yildirim
+
+
+  #content.snap-content
+    .col-1-3
       iframe(
         width='500',
         height='500',
@@ -19,10 +28,6 @@ block content
         scrolling='no',
         id='chat_embed',
         src=embed)
-
-  footer.grid.grid-pad(role='contentinfo')
-    .col-1-1
-      p nwitch &copy; 2013 Kenan Yildirim
 
   script(src='build.js')
   script(src='js/index.js')
