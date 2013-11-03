@@ -116,11 +116,3 @@ revert).
 No; nwitch was conceived as a self-hosted bot. There is no reason to have a
 hosted version that runs 24/7, because the features it provides are only useful
 while you're streaming.
-
-## Contributing
-
-See `CONTRIBUTING.md` for guidelines on contributions.
-
-## License
-
-MIT, see `LICENSE.md`.
