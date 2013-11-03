@@ -7,12 +7,6 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json')
   });
 
-  grunt.registerTask('bundle', 'Bundle dependencies', function() {
-    var pkg = grunt.config('pkg');
-    pkg.bundleDependencies = Object.keys(pkg.dependencies);
-    grunt.file.write('./package.json', JSON.stringify(pkg, undefined, '  '));
-  });
-
   grunt.registerTask('comp', 'Component compile', function() {
     var done = this.async();
 
