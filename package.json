@@ -11,6 +11,9 @@
     "email": "kenan@kenany.me",
     "web": "http://kenany.me/"
   },
+  "bin": {
+    "nwitch": "bin/cmd.js"
+  },
   "main": "./lib/",
   "repository": "https://github.com/KenanY/nwitch.git",
   "license": "MIT",
@@ -19,6 +22,7 @@
     "concat-stream": "~1.0",
     "express": "~3.0",
     "express-uncapitalize": "~1.0",
+    "findup-sync": "0.1.2",
     "graceful-fs": "~2.0",
     "gzippo": "0.2.0",
     "irc": "0.3.6",
@@ -30,6 +34,7 @@
     "ms": "0.6.1",
     "passport": "0.1.17",
     "passport-twitchtv": "0.1.1",
+    "resolve": "0.5.1",
     "stringify-object": "0.1.7",
     "toml": "~1.0",
     "winston": "0.7.2"
