@@ -1,7 +1,5 @@
-node_modules/.bin/*
-node_modules/component-builder
-node_modules/grunt
-build/
+node_modules
+build
 *.log
 public/build.js
 public/build.css
