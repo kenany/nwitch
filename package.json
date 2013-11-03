@@ -20,7 +20,8 @@
     "LICENSE.md"
   ],
   "bin": {
-    "nwitch": "bin/cmd.js"
+    "nwitch": "bin/cmd.js",
+    "nwitch init": "bin/init.js"
   },
   "main": "./lib/",
   "repository": "https://github.com/KenanY/nwitch.git",
@@ -33,6 +34,7 @@
     "findup-sync": "0.1.2",
     "graceful-fs": "~2.0",
     "gzippo": "0.2.0",
+    "inquirer": "0.3.5",
     "irc": "0.3.6",
     "jade": "0.35.0",
     "lodash.defaults": "~2.0",

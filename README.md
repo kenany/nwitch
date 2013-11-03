@@ -60,9 +60,11 @@ bots.
 Create a new TwitchTV account for your bot. Preferably, the username should make
 it clear to your viewers that the account is a bot.
 
-Then, create a file called `config.toml` in the folder you created for nwitch.
-This configuration file is a [TOML](https://github.com/mojombo/toml) file, so
-editing and reading it should be easy thanks to obvious semantics.
+Then, create a configuration file through nwitch:
+
+``` bash
+$ nwitch init
+```
 
 As of September 17, 2013, TwitchTV now requires an OAuth token in order to log
 into the IRC of a channel. Since nwitch does use IRC for chat moderation, you

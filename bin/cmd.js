@@ -16,4 +16,6 @@ try {
   }
 }
 
-require(nwitchPath)(path.resolve(base, './config.toml'));
+var configFile = path.resolve(base, './config.toml');
+
+require(nwitchPath)(configFile);
