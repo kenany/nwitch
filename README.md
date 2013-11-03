@@ -28,14 +28,26 @@ designed to work in [Node.js](http://nodejs.org/).
 Currently, nwitch is in early development. There are no guarantees that anything
 is working at any particular point in time.
 
-## Download
+## Installation
 
-You can download nwitch with [git](http://git-scm.com/). Remember that you need
-Node.js installed to build and run the bot.
+First, install nwitch globally.
 
 ``` bash
-$ git clone https://github.com/KenanY/nwitch.git --depth 1
-$ cd nwitch
+$ npm install -g nwitch
+```
+
+This will add the `nwitch` command to your path. Now, create a folder for your
+bot's configuration file and database to live in.
+
+``` bash
+$ mkdir nwitch_folder
+$ cd nwitch_folder
+```
+
+Then, install nwitch to this folder.
+
+``` bash
+$ npm install nwitch
 ```
 
 ## Usage
@@ -48,9 +60,9 @@ bots.
 Create a new TwitchTV account for your bot. Preferably, the username should make
 it clear to your viewers that the account is a bot.
 
-Then, rename `sample.config.toml` to `config.toml`. This configuration file is a
-[TOML](https://github.com/mojombo/toml) file, so editing and reading it should
-be easy thanks to obvious semantics.
+Then, create a file called `config.toml` in the folder you created for nwitch.
+This configuration file is a [TOML](https://github.com/mojombo/toml) file, so
+editing and reading it should be easy thanks to obvious semantics.
 
 As of September 17, 2013, TwitchTV now requires an OAuth token in order to log
 into the IRC of a channel. Since nwitch does use IRC for chat moderation, you
@@ -61,10 +73,11 @@ token (including `oauth:`) should be your `account.password` in `config.toml`.
 ### Initializing
 
 You must run nwitch every time you start streaming, and leave it running in the
-background throughout your streaming session.
+background throughout your streaming session. From within your nwitch folder,
+just run the `nwitch` command.
 
 ``` bash
-$ node nwitch
+$ nwitch
 ```
 
 You will then find nwitch's dashboard by going to <http://localhost:3001>
