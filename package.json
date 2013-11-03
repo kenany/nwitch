@@ -16,7 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "async": "0.2.9",
-    "concat-stream": "1.0.1",
+    "concat-stream": "1.1.0",
     "express": "3.4.2",
     "express-uncapitalize": "1.0.0",
     "graceful-fs": "2.0.1",
