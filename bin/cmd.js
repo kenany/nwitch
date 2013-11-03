@@ -8,7 +8,7 @@ var base = process.cwd();
 
 var nwitchPath;
 try {
-  nwitchPath = resolve('nwitchPath', {basedir: base});
+  nwitchPath = resolve('nwitch', {basedir: base});
 } catch (error) {
   nwitchPath = findup('lib/index.js');
   if (!nwitchPath) {
