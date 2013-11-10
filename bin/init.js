@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var path = require('path');
 var fs = require('graceful-fs');
 var inquirer = require('inquirer');
