@@ -4,6 +4,8 @@ var path = require('path');
 var findup = require('findup-sync');
 var resolve = require('resolve').sync;
 
+var logger = require('../lib/core/logger').logger;
+
 var base = process.cwd();
 
 var nwitchPath;
@@ -12,7 +14,7 @@ try {
 } catch (error) {
   nwitchPath = findup('lib/index.js');
   if (!nwitchPath) {
-    console.error('Unable to find local nwitch.');
+    logger.error('Unable to find local nwitch.');
   }
 }
 
