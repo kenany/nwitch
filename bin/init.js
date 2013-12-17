@@ -5,7 +5,7 @@ var fs = require('graceful-fs');
 var inquirer = require('inquirer');
 var json2toml = require('json2toml');
 
-var logger = require('../lib/core/logger').logger;
+var logger = require('../lib/core/logger');
 
 var QUESTIONS = [
   {

@@ -4,7 +4,7 @@ var path = require('path');
 var findup = require('findup-sync');
 var resolve = require('resolve').sync;
 
-var logger = require('../lib/core/logger').logger;
+var logger = require('../lib/core/logger');
 
 var base = process.cwd();
 
