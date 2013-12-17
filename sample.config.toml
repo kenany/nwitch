@@ -10,3 +10,6 @@ port = 6667
 [server]
 port = 3001
 cacheAge = "1 year"
+
+[bot]
+plugins = []
