@@ -57,6 +57,12 @@ var QUESTIONS = [
 ];
 
 inquirer.prompt(QUESTIONS, function(answers) {
+
+  // The output of the json2toml module isn't the prettiest TOML around. The
+  // primary issue is that there are no newlines between the key groups.
+  //
+  // To work around this, we can json2toml-ify the key groups one at a time, and
+  // add a newline after each ourselves.
   var configs = [
     {
       account: {
@@ -79,11 +85,11 @@ inquirer.prompt(QUESTIONS, function(answers) {
     },
   ];
 
-  var tomlFile = json2toml(configs[0]) + '\n';
-  tomlFile += json2toml(configs[1]) + '\n';
-  tomlFile += json2toml(configs[2]);
+  var tomlFile = '';
+  configs.forEach(function(conf) {
+    tomlFile += json2toml(conf) + '\n';
+  });
 
-
-  fs.writeFileSync(path.resolve(process.cwd(), './_config.toml'), tomlFile);
+  fs.writeFileSync(path.resolve(process.cwd(), './config.toml'), tomlFile);
   logger.info('Config file created!');
 });
