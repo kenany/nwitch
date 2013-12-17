@@ -57,23 +57,6 @@ var QUESTIONS = [
 ];
 
 inquirer.prompt(QUESTIONS, function(answers) {
-
-  var tomlFile = [
-    '[account]',
-    'username = ' + '"' + answers['account.username'] + '"',
-    'password = ' + '"' + answers['account.password'] + '"',
-    'channel = ' + '"' + answers['account.channel'] + '"',
-    '',
-    '[irc]',
-    'address = ' + '"' + answers['irc.address'] + '"',
-    'port = ' + answers['irc.port'],
-    '',
-    '[server]',
-    'port = ' + answers['server.port'],
-    'cacheAge = ' + '"' + answers['server.cacheAge'] + '"'
-  ].join('\n');
-
-
   var configs = [
     {
       account: {
@@ -101,6 +84,6 @@ inquirer.prompt(QUESTIONS, function(answers) {
   tomlFile += json2toml(configs[2]);
 
 
-  fs.writeFileSync(path.resolve(process.cwd(), './config.toml'), tomlFile);
+  fs.writeFileSync(path.resolve(process.cwd(), './_config.toml'), tomlFile);
   logger.info('Config file created!');
 });
