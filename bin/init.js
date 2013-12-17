@@ -3,6 +3,7 @@
 var path = require('path');
 var fs = require('graceful-fs');
 var inquirer = require('inquirer');
+var json2toml = require('json2toml');
 
 var logger = require('../lib/core/logger').logger;
 
@@ -57,7 +58,6 @@ var QUESTIONS = [
 
 inquirer.prompt(QUESTIONS, function(answers) {
 
-  // The world needs a JSON => TOML module.
   var tomlFile = [
     '[account]',
     'username = ' + '"' + answers['account.username'] + '"',
@@ -72,6 +72,34 @@ inquirer.prompt(QUESTIONS, function(answers) {
     'port = ' + answers['server.port'],
     'cacheAge = ' + '"' + answers['server.cacheAge'] + '"'
   ].join('\n');
+
+
+  var configs = [
+    {
+      account: {
+        username: answers['account.username'],
+        password: answers['account.password'],
+        channel: answers['account.channel']
+      }
+    },
+    {
+      irc: {
+        address: answers['irc.address'],
+        port: answers['irc.port']
+      }
+    },
+    {
+      server: {
+        port: answers['server.port'],
+        cacheAge: answers['server.cacheAge']
+      }
+    },
+  ];
+
+  var tomlFile = json2toml(configs[0]) + '\n';
+  tomlFile += json2toml(configs[1]) + '\n';
+  tomlFile += json2toml(configs[2]);
+
 
   fs.writeFileSync(path.resolve(process.cwd(), './config.toml'), tomlFile);
   logger.info('Config file created!');
