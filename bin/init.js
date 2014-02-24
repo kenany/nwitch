@@ -56,40 +56,42 @@ var QUESTIONS = [
   },
 ];
 
-inquirer.prompt(QUESTIONS, function(answers) {
+module.exports = function() {
+  inquirer.prompt(QUESTIONS, function(answers) {
 
-  // The output of the json2toml module isn't the prettiest TOML around. The
-  // primary issue is that there are no newlines between the key groups.
-  //
-  // To work around this, we can json2toml-ify the key groups one at a time, and
-  // add a newline after each ourselves.
-  var configs = [
-    {
-      account: {
-        username: answers['account.username'],
-        password: answers['account.password'],
-        channel: answers['account.channel']
-      }
-    },
-    {
-      irc: {
-        address: answers['irc.address'],
-        port: answers['irc.port']
-      }
-    },
-    {
-      server: {
-        port: answers['server.port'],
-        cacheAge: answers['server.cacheAge']
-      }
-    },
-  ];
+    // The output of the json2toml module isn't the prettiest TOML around. The
+    // primary issue is that there are no newlines between the key groups.
+    //
+    // To work around this, we can json2toml-ify the key groups one at a time,
+    // and add a newline after each ourselves.
+    var configs = [
+      {
+        account: {
+          username: answers['account.username'],
+          password: answers['account.password'],
+          channel: answers['account.channel']
+        }
+      },
+      {
+        irc: {
+          address: answers['irc.address'],
+          port: answers['irc.port']
+        }
+      },
+      {
+        server: {
+          port: answers['server.port'],
+          cacheAge: answers['server.cacheAge']
+        }
+      },
+    ];
 
-  var tomlFile = '';
-  configs.forEach(function(conf) {
-    tomlFile += json2toml(conf) + '\n';
+    var tomlFile = '';
+    configs.forEach(function(conf) {
+      tomlFile += json2toml(conf) + '\n';
+    });
+
+    fs.writeFileSync(path.resolve(process.cwd(), './config.toml'), tomlFile);
+    logger.info('Config file created!');
   });
-
-  fs.writeFileSync(path.resolve(process.cwd(), './config.toml'), tomlFile);
-  logger.info('Config file created!');
-});
+};

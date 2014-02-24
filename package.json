@@ -21,7 +21,7 @@
   ],
   "bin": {
     "nwitch": "bin/cmd.js",
-    "nwitch init": "bin/init.js"
+    "nwitch-init": "bin/init.js"
   },
   "main": "./lib/",
   "repository": "https://github.com/KenanY/nwitch.git",
@@ -42,6 +42,7 @@
     "lodash.forown": "^2.3.0",
     "lodash.isfunction": "^2.3.0",
     "lodash.isundefined": "^2.3.0",
+    "minimist": "^0.0.8",
     "ms": "^0.6.1",
     "passport": "^0.1.17",
     "passport-twitchtv": "^0.1.1",
