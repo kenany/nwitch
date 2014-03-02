@@ -7,10 +7,15 @@ var resolve = require('resolve').sync;
 
 var logger = require('../lib/core/logger');
 
-var argv = minimist(process.argv.slice(2));
+var argv = minimist(process.argv.slice(2), {
+    alias: {v: 'version'}
+});
 
 if (argv._[0] === 'init') {
   require('./init')();
+}
+else if (argv.v) {
+  logger.info(require('../package.json').version);
 }
 else {
   var base = process.cwd();
