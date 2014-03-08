@@ -2,15 +2,7 @@
   "name": "nwitch",
   "version": "0.3.2",
   "description": "A TwitchTV bot written in JavaScript.",
-  "homepage": "https://github.com/KenanY/nwitch",
-  "bugs": {
-    "url": "https://github.com/KenanY/nwitch/issues"
-  },
-  "author": {
-    "name": "Kenan Yildirim",
-    "email": "kenan@kenany.me",
-    "web": "http://kenany.me/"
-  },
+  "author": "Kenan Yildirim <kenan@kenany.me> (http://kenany.me/)",
   "files": [
     "bin",
     "components",
@@ -24,7 +16,7 @@
     "nwitch-init": "bin/init.js"
   },
   "main": "./lib/",
-  "repository": "https://github.com/KenanY/nwitch.git",
+  "repository": "KenanY/nwitch",
   "license": "MIT",
   "dependencies": {
     "async": "^0.2.9",
