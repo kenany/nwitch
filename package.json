@@ -13,9 +13,6 @@
     "nwitch-init": "bin/init.js"
   },
   "main": "./lib/",
-  "scripts": {
-    "build": "node build.js"
-  },
   "repository": "KenanY/nwitch",
   "license": "MIT",
   "dependencies": {
