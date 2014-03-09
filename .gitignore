@@ -1,6 +1,3 @@
 node_modules
-build
 *.log
-public/build.js
-public/build.css
 config.toml
