@@ -15,6 +15,8 @@ is working at any particular point in time.
 
 ## Installation
 
+  - [TwitchTV guide](https://github.com/KenanY/nwitch/wiki/TwitchTV)
+
 ``` bash
 $ npm install nwitch
 ```
