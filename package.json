@@ -27,7 +27,6 @@
     "graceful-fs": "^2.0.1",
     "gzippo": "^0.2.0",
     "inquirer": "^0.3.5",
-    "irc": "^0.3.6",
     "jade": "^0.35.0",
     "json2toml": "^1.0.0",
     "lodash.defaults": "^2.3.0",
@@ -39,6 +38,7 @@
     "passport": "^0.1.17",
     "passport-twitchtv": "^0.1.1",
     "resolve": "^0.5.1",
+    "slate-irc": "^0.4.0",
     "stringify-object": "^0.1.7",
     "toml": "^1.0.4",
     "winston": "^0.7.2"
