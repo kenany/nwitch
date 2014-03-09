@@ -11,7 +11,6 @@ included.
 ``` bash
 $ git clone https://github.com/KenanY/nwitch.git
 $ cd nwitch
-$ npm install grunt-cli -g
 $ npm install
 ```
 
