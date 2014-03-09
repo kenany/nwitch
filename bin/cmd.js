@@ -10,7 +10,7 @@ var toml = require('toml');
 var logger = require('../lib/logger');
 
 var argv = minimist(process.argv.slice(2), {
-    alias: {v: 'version'}
+  alias: {v: 'version'}
 });
 
 if (argv._[0] === 'init') {
