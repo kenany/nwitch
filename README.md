@@ -23,10 +23,20 @@ $ npm install nwitch
 
 ## API
 
-### new Nwitch(config)
+``` javascript
+var Nwitch = require('nwitch');
+```
 
-Creates a new Nwitch instance.
+### var nwitch = new Nwitch(config)
 
-### #use(plugin)
+Creates a new Nwitch instance with options `config`:
 
-Adds the given `plugin` function.
+  - `config.irc.address`
+  - `config.irc.port`
+  - `config.account.username`
+  - `config.account.password`
+  - `config.account.channel`
+
+### nwitch.use(plugin)
+
+Adds the given `plugin` function. Returns `nwitch` for chaining.
