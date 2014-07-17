@@ -1,6 +1,6 @@
 # nwitch
 
-[![Dependency Status](https://gemnasium.com/KenanY/nwitch.png)](https://gemnasium.com/KenanY/nwitch)
+[![Dependency Status](https://gemnasium.com/KenanY/nwitch.svg)](https://gemnasium.com/KenanY/nwitch)
 
 nwitch is a simple, pluggable IRC bot written in JavaScript and designed to work
 in [Node.js](http://nodejs.org/).
