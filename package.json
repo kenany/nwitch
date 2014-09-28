@@ -23,7 +23,7 @@
     "json2toml": "^1.0.0",
     "minimist": "^1.1.0",
     "resolve": "^1.0.0",
-    "slate-irc": "^0.4.0",
+    "slate-irc": "^0.7.1",
     "toml": "^1.0.4",
     "winston": "^0.7.2"
   },
