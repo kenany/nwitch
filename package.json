@@ -16,7 +16,7 @@
   "repository": "KenanY/nwitch",
   "license": "MIT",
   "dependencies": {
-    "behest": "^0.0.2",
+    "behest": "^1.0.0",
     "findup-sync": "git://github.com/KenanY/node-findup-sync.git#lodash-2",
     "graceful-fs": "^2.0.1",
     "inquirer": "^0.8.0",
