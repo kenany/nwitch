@@ -21,7 +21,7 @@
     "graceful-fs": "^2.0.1",
     "inquirer": "^0.3.5",
     "json2toml": "^1.0.0",
-    "minimist": "^0.0.8",
+    "minimist": "^1.1.0",
     "resolve": "^0.5.1",
     "slate-irc": "^0.4.0",
     "toml": "^1.0.4",
