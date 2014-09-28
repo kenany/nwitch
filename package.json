@@ -18,7 +18,7 @@
   "dependencies": {
     "behest": "^1.0.0",
     "findup-sync": "git://github.com/KenanY/node-findup-sync.git#lodash-2",
-    "graceful-fs": "^2.0.1",
+    "graceful-fs": "^3.0.2",
     "inquirer": "^0.8.0",
     "json2toml": "^1.0.0",
     "minimist": "^1.1.0",
