@@ -25,7 +25,7 @@
     "resolve": "^1.0.0",
     "slate-irc": "^0.7.1",
     "toml": "^2.0.6",
-    "winston": "^0.7.2"
+    "winston": "^0.8.0"
   },
   "devDependencies": {
     "ircd": "^0.1.0",
