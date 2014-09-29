@@ -1,5 +1,6 @@
 # nwitch
 
+[![Build Status](https://img.shields.io/travis/KenanY/nwitch.svg)](https://travis-ci.org/KenanY/nwitch)
 [![Dependency Status](https://gemnasium.com/KenanY/nwitch.svg)](https://gemnasium.com/KenanY/nwitch)
 
 nwitch is a simple, pluggable IRC bot written in JavaScript and designed to work
