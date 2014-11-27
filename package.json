@@ -15,6 +15,9 @@
   "main": "./lib/",
   "repository": "KenanY/nwitch",
   "license": "MIT",
+  "scripts": {
+    "test": "tape test/index.js"
+  },
   "dependencies": {
     "behest": "^1.0.0",
     "findup-sync": "git://github.com/KenanY/node-findup-sync.git#lodash-2",
