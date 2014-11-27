@@ -31,7 +31,7 @@
     "winston": "^0.8.0"
   },
   "devDependencies": {
-    "ircd": "aredridel/node-ircd",
+    "ircd": "KenanY/node-ircd",
     "tape": "^3.0.0"
   }
 }
