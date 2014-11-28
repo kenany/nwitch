@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "ircd": "KenanY/node-ircd",
+    "lodash.isfunction": "^2.4.1",
     "tape": "^3.0.0"
   }
 }
