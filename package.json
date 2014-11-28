@@ -16,7 +16,7 @@
   "repository": "KenanY/nwitch",
   "license": "MIT",
   "scripts": {
-    "test": "tape test/index.js"
+    "test": "tape test/*.js"
   },
   "dependencies": {
     "behest": "^1.0.0",
