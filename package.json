@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "behest": "^1.0.0",
-    "findup-sync": "KenanY/node-findup-sync#better",
+    "findup-sync": "^0.2.1",
     "graceful-fs": "^3.0.2",
     "inquirer": "^0.8.0",
     "json2toml": "^1.0.0",
